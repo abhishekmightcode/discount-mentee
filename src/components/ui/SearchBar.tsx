@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { brands } from "@/lib/data";
 import { Search } from "lucide-react";
@@ -44,11 +45,14 @@ export default function SearchBar() {
                   href={`/${brand.slug}`}
                   className="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors"
                 >
-                  <div
-                    className="w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-xs"
-                    style={{ backgroundColor: brand.color }}
-                  >
-                    {brand.icon}
+                  <div className="w-8 h-8 rounded-lg overflow-hidden bg-gray-50 border border-border shrink-0">
+                    <Image
+                      src={brand.image}
+                      alt={brand.name}
+                      width={32}
+                      height={32}
+                      className="object-contain w-full h-full"
+                    />
                   </div>
                   <div>
                     <p className="text-sm font-medium">{brand.name}</p>

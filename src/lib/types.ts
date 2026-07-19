@@ -6,6 +6,7 @@ export interface Brand {
   discount: string;
   color: string;
   icon: string;
+  image: string;
 }
 
 export interface Category {

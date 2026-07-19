@@ -1,10 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Shield, Clock, Gift, CheckCircle } from "lucide-react";
 import { OfferDetail } from "@/lib/types";
-import FAQSection from "@/components/sections/FAQSection";
 
 const icons = [Shield, Clock, Gift, CheckCircle];
 
@@ -12,10 +12,12 @@ export default function BrandOfferTemplate({
   brand,
   offer,
   color,
+  image,
 }: {
   brand: string;
   offer: OfferDetail;
   color: string;
+  image: string;
 }) {
   return (
     <div>
@@ -29,11 +31,14 @@ export default function BrandOfferTemplate({
             transition={{ duration: 0.6 }}
             className="max-w-3xl"
           >
-            <div
-              className="w-16 h-16 rounded-2xl flex items-center justify-center text-white font-bold text-2xl mb-6 shadow-lg"
-              style={{ backgroundColor: color }}
-            >
-              {brand[0]}
+            <div className="w-20 h-20 rounded-2xl overflow-hidden mb-6 bg-white/10 backdrop-blur-sm border border-white/20 p-2 flex items-center justify-center shadow-lg">
+              <Image
+                src={image}
+                alt={brand}
+                width={64}
+                height={64}
+                className="object-contain w-full h-full"
+              />
             </div>
             <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">{offer.title}</h1>
             <p className="text-lg text-white/70 leading-relaxed mb-8">{offer.description}</p>

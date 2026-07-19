@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -17,11 +18,14 @@ export default function BrandCard({ brand, index = 0 }: { brand: Brand; index?: 
     >
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-50/50 via-transparent to-orange-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
       <div className="relative z-10">
-        <div
-          className="w-14 h-14 rounded-2xl flex items-center justify-center text-white font-bold text-xl mb-4 shadow-md"
-          style={{ backgroundColor: brand.color }}
-        >
-          {brand.icon}
+        <div className="w-16 h-16 rounded-2xl overflow-hidden mb-4 bg-gray-50 flex items-center justify-center border border-border p-2">
+          <Image
+            src={brand.image}
+            alt={brand.name}
+            width={56}
+            height={56}
+            className="object-contain w-full h-full"
+          />
         </div>
         <div className="inline-block px-3 py-1 rounded-full bg-primary-light text-primary text-xs font-semibold mb-3">
           Up to {brand.discount} Off

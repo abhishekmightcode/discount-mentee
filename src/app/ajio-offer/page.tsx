@@ -7,7 +7,7 @@ import { ajioOffer } from "@/lib/data";
 export default function AJIOOfferPage() {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }}>
-      <BrandOfferTemplate brand="AJIO" offer={ajioOffer} color="#E91E63" />
+      <BrandOfferTemplate brand="AJIO" offer={ajioOffer} color="#E91E63" image="/images/ajio-coupons-1735561339.jpg" />
     </motion.div>
   );
 }

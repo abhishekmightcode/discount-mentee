@@ -1,14 +1,14 @@
 import { Brand, Category, Feature, FAQ, OfferDetail } from "./types";
 
 export const brands: Brand[] = [
-  { id: "1", name: "Amazon", slug: "amazon-offer", description: "Exclusive student discounts on electronics, books, and more.", discount: "40%", color: "#FF9900", icon: "A" },
-  { id: "2", name: "Flipkart", slug: "flipkart-offer", description: "Special student pricing on gadgets, fashion, and daily essentials.", discount: "50%", color: "#2874F0", icon: "F" },
-  { id: "3", name: "Myntra", slug: "myntra-offer", description: "Student-exclusive fashion deals on top brands.", discount: "30%", color: "#E40046", icon: "M" },
-  { id: "4", name: "AJIO", slug: "ajio-offer", description: "Premium fashion discounts curated for students.", discount: "35%", color: "#E91E63", icon: "A" },
-  { id: "5", name: "Nykaa", slug: "nykaa-offer", description: "Beauty and wellness products at student-friendly prices.", discount: "25%", color: "#FC2779", icon: "N" },
-  { id: "6", name: "Adidas", slug: "adidas-offer", description: "Sportswear and sneakers with exclusive student pricing.", discount: "20%", color: "#000000", icon: "A" },
-  { id: "7", name: "Puma", slug: "puma-offer", description: "Athletic gear and lifestyle wear at special rates.", discount: "20%", color: "#E63946", icon: "P" },
-  { id: "8", name: "Croma", slug: "croma-offer", description: "Tech gadgets and electronics for student budgets.", discount: "15%", color: "#1A1A2E", icon: "C" },
+  { id: "1", name: "Amazon", slug: "amazon-offer", description: "Exclusive student discounts on electronics, books, and more.", discount: "40%", color: "#FF9900", icon: "A", image: "/images/amazon-1735629515.jpg" },
+  { id: "2", name: "Flipkart", slug: "flipkart-offer", description: "Special student pricing on gadgets, fashion, and daily essentials.", discount: "50%", color: "#2874F0", icon: "F", image: "/images/flipkart-logo-large.jpg" },
+  { id: "3", name: "Myntra", slug: "myntra-offer", description: "Student-exclusive fashion deals on top brands.", discount: "30%", color: "#E40046", icon: "M", image: "/images/myntra-1735792893.jpg" },
+  { id: "4", name: "AJIO", slug: "ajio-offer", description: "Premium fashion discounts curated for students.", discount: "35%", color: "#E91E63", icon: "A", image: "/images/ajio-coupons-1735561339.jpg" },
+  { id: "5", name: "Nykaa", slug: "nykaa-offer", description: "Beauty and wellness products at student-friendly prices.", discount: "25%", color: "#FC2779", icon: "N", image: "/images/nykaa-logo-large.jpg" },
+  { id: "6", name: "Nike", slug: "nike-offer", description: "Premium sportswear and sneakers with exclusive student pricing.", discount: "25%", color: "#000000", icon: "N", image: "/images/nike-logo-large.jpg" },
+  { id: "7", name: "Puma", slug: "puma-offer", description: "Athletic gear and lifestyle wear at special rates.", discount: "20%", color: "#E63946", icon: "P", image: "/images/puma-logo-large.jpg" },
+  { id: "8", name: "Croma", slug: "croma-offer", description: "Tech gadgets and electronics for student budgets.", discount: "15%", color: "#1A1A2E", icon: "C", image: "/images/croma.jpg" },
 ];
 
 export const categories: Category[] = [
